@@ -4,7 +4,7 @@ const { User, Product, Shipment } = require('./models');
 const bcrypt = require('bcrypt');
 
 router.get("/", async (req, res) => {
-    return "Hola bienvenido!"
+    res.json({ message: "¡Hola, bienvenido!" });
 })
 
 router.post('/users', async (req, res) => {
